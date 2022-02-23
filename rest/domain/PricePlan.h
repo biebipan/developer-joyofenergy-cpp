@@ -4,11 +4,14 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <chrono>
 
 class PricePlan {
   // todo:
  public:
-  using time_point_type = std::chrono::time_point<std::chrono::system_clock>;
+  // using time_point_type = std::chrono::time_point<std::chrono::system_clock>;
+  typedef std::chrono::time_point<std::chrono::system_clock>  time_point_type;
+
   class PeakTimeMultiplier {
    public:
     enum DayOfWeek {
